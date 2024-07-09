@@ -19,7 +19,7 @@ public class CursorTrail extends ParticleSystem {
             float trailSize,
             TextureRegion pTextureRegion
     ) {
-        super(emitter, spawnRate * 5, spawnRate * 10, spawnRate * 5, pTextureRegion);
+        super(emitter, spawnRate, spawnRate, spawnRate, pTextureRegion);
 
         fadeOut();
         setBlendFunction(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
@@ -28,7 +28,8 @@ public class CursorTrail extends ParticleSystem {
     }
 
     private void fadeOut() {
-        addParticleModifier(new ExpireModifier(0.12f));
-        addParticleModifier(new AlphaModifier(1.0f, 0.0f, 0f, 0.12f));
+    addParticleModifier(new ExpireModifier(0.15f));
+    addParticleModifier(new AlphaModifier(1.0f, 0.0f, 0f, 0.145f));
+    addParticleModifier(new ScaleModifier(1.0f, 0.0f, 0f, 0.145f));
     }
 }
