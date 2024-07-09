@@ -5,6 +5,7 @@ import org.anddev.andengine.entity.particle.emitter.PointParticleEmitter;
 import org.anddev.andengine.entity.particle.initializer.ScaleInitializer;
 import org.anddev.andengine.entity.particle.modifier.AlphaModifier;
 import org.anddev.andengine.entity.particle.modifier.ExpireModifier;
+import org.anddev.andengine.entity.particle.modifier.ScaleModifier;
 import org.anddev.andengine.opengl.texture.region.TextureRegion;
 
 import javax.microedition.khronos.opengles.GL10;
@@ -28,8 +29,8 @@ public class CursorTrail extends ParticleSystem {
     }
 
     private void fadeOut() {
-    addParticleModifier(new ExpireModifier(0.40f));
-    addParticleModifier(new AlphaModifier(1.0f, 0.0f, 0f, 0.145f));
-    addParticleModifier(new ScaleModifier(1.0f, 0.0f, 0f, 0.145f));
+        addParticleModifier(new ExpireModifier(0.40f));
+        addParticleModifier(new AlphaModifier(1.0f, 0.0f, 0.145f));
+        addParticleModifier(new ScaleModifier(1.0f, 0.0f, 0.145f));
     }
 }
