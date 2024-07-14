@@ -23,7 +23,7 @@ public class CursorTrail extends ParticleSystem {
         super(emitter, spawnRate, spawnRate, spawnRate, pTextureRegion);
 
         fadeOut();
-        setBlendFunction(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
+        setBlendFunction(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA);
         addParticleInitializer(new ScaleInitializer(trailSize));
         setParticlesSpawnEnabled(false);
     }
