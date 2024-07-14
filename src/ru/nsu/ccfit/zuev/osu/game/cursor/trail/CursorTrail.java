@@ -31,6 +31,6 @@ public class CursorTrail extends ParticleSystem {
     private void fadeOut() {
         addParticleModifier(new ExpireModifier(0.40f));
         addParticleModifier(new AlphaModifier(1.0f, 0.0f, 0.0f, 0.145f));
-        addParticleModifier(new ScaleModifier(1.0f, 0.50f, 0.015f, 0.010f));
+        addParticleModifier(new ScaleModifier(1.0f, 0.75f, 0.0f, 0.40f));
     }
 }
