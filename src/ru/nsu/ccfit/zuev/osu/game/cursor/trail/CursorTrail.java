@@ -8,7 +8,7 @@ import org.anddev.andengine.entity.particle.modifier.ExpireModifier;
 import org.anddev.andengine.entity.particle.modifier.ScaleModifier;
 import org.anddev.andengine.opengl.texture.region.TextureRegion;
 
-import javax.microedition.khronos.opengles.GL10;
+import android.opengl.GLES20;
 
 import ru.nsu.ccfit.zuev.osu.Config;
 import ru.nsu.ccfit.zuev.osu.game.cursor.main.CursorSprite;
